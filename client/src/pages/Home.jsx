@@ -5,7 +5,6 @@ import state from '../store'
 
 import { 
     headContainerAnimation,
-    headContentAnimation,
     headTextAnimation,
     slideAnimation
 } from '../config/motion'
@@ -30,11 +29,11 @@ const Home = () => {
                   >
                       <motion.div {...headTextAnimation}>                      
                       </motion.div>                      
-                      <h1 className="head-text">
-                          LET´S <br className="xl:block hidden" /> DO IT.
+                      <h1 className="head-text text-shadow">
+                          LET´S <br className="xl:block hidden" /> A GO.
                       </h1>
                       <motion.div className="flex-col gap-5" {...headContainerAnimation}>
-                          <p className="max-w-md font-normal text-gray-600 text-base">
+                          <p className="max-w-md font-normal text-black text-base">
                               Create your unique & exclusive t-shirt with our brand-new 3D customization tool. <strong>Unleash your imagination</strong>{" "}
                               & define your style.
                           </p>
