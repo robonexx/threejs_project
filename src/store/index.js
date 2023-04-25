@@ -4,7 +4,7 @@ const state = proxy({
   intro: true,
   bg: '#121212',
   color: '#efbd48',
-    tshirtColor: '#009900',
+  tshirtColor: '#009900',
   textColor: '#fff',
   isLogoTexture: true,
   isFullTexture: false,

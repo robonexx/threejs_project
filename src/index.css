@@ -94,3 +94,40 @@ input[type="file"] {
 .sketch-picker > div:nth-child(3) {
   display: none !important;
 }
+
+.animation {
+  animation: logoAnimation 6s linear infinite alternate;
+}
+
+.animation:hover  {
+  animation: spin 1s linear 1 forwards;
+}
+
+@keyframes logoAnimation {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+    filter: drop-shadow(4px 4px 8px rgba(0,0,0,.525));
+  }
+
+  80% {
+    transform: rotate(-5deg);
+    filter: drop-shadow(-4px -4px 8px rgba(0,0,0,.525));
+  }
+  100% {
+    transform: rotate(0deg);
+  }  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
